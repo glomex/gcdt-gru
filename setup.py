@@ -24,7 +24,7 @@ setup(
     version=version,
     description='Scaffolding addon for gcdt lambda',
     long_description=long_description,
-    license='BSD',
+    license='MIT',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
