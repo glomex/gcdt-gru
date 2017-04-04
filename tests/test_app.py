@@ -4,8 +4,8 @@ import json
 
 import pytest
 from pytest import fixture
-from gru import app
-from gru import NotFoundError
+from gcdt_gru import app
+from gcdt_gru import NotFoundError
 
 
 def create_request_with_content_type(content_type):

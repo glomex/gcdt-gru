@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 from codecs import open
 import os
-from gru import __version__
+from gcdt_gru import __version__
 
 here = os.path.abspath(os.path.dirname(__file__))
 version = __version__
