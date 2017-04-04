@@ -1,0 +1,2 @@
+#gcdt-gru
+#-e git://github.com/glomex/gcdt-gru.git#egg=gcdt-gru

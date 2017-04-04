@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Gru app and routing code.
 
-from here:
+code borrowed from here:
 https://github.com/awslabs/chalice/blob/master/chalice/app.py
 """
 import re
@@ -400,11 +400,10 @@ class Gru(object):
         response.headers['Access-Control-Allow-Origin'] = '*'
 
 
-# dummy functions so we collect gru version through plugin mechanism
+# dummy functions so we collect gru version through gcdt plugin mechanism
 def register():
     pass
 
 
 def deregister():
     pass
-

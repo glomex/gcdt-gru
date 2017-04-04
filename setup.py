@@ -37,4 +37,9 @@ setup(
     install_requires=install_requires,
     dependency_links=dependency_links,
     author_email='mark.fink@glomex.com',
+    entry_points={
+        'gcdt10': [
+            'app=gcdt_gru.app',
+        ],
+    },
 )

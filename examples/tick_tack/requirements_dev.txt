@@ -1,0 +1,7 @@
+pytest
+gcdt
+gcdt-config-reader
+gcdt-lookups
+gcdt-say-hello
+gcdt-bundler
+gcdt-gen-serverless

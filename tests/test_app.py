@@ -10,7 +10,7 @@ from gcdt_gru import NotFoundError
 
 def create_request_with_content_type(content_type):
     body = '{"json": "body"}'
-    return app.Request(
+    return app.APIGatewayRequest(
         {}, {'Content-Type': content_type}, {}, 'GET',
         body, {}, {}
     )

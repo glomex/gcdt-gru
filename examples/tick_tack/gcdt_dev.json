@@ -1,0 +1,41 @@
+{
+    "ramuda": {
+        "bundling": {
+            "folders": [
+                {
+                    "source": "./vendored",
+                    "target": "."
+                }
+            ], 
+            "zip": "bundle.zip"
+        }, 
+        "deployment": {
+            "artifactBucket": "7finity-infra-dev-deployment", 
+            "region": "eu-west-1"
+        }, 
+        "lambda": {
+            "description": "Lambda function for ticktack",
+            "events": {}, 
+            "handlerFile": "app.py", 
+            "handlerFunction": "app.app", 
+            "memorySize": "128", 
+            "name": "infra-dev-ticktack",
+            "role": "arn:aws:iam::420189626185:role/7f-selfassign/infra-dev-CommonLambdaRole-CEQQX3SPUTFX", 
+            "timeout": "300",
+
+            "events": {
+                "timeSchedules": [
+                    {
+                        "ruleName": "infra-dev-sample-ticktack-rule",
+                        "ruleDescription": "run every 5 min from 0-5",
+                        "scheduleExpression": "cron(0/2 0-21 ? * * *)"
+                    }
+                ]
+            },
+
+            "vpc": {}
+
+        }
+    }
+
+}
