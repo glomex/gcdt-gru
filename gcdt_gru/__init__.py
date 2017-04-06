@@ -4,4 +4,4 @@ from .app import (
     NotFoundError, ConflictError, TooManyRequestsError, Response
 )
 
-__version__ = '0.6.0'
+__version__ = '0.6.1'
