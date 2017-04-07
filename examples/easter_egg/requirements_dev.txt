@@ -1,1 +1,8 @@
-pytest
+gcdt
+gcdt-say-hello
+gcdt-config-reader
+gcdt-bundler
+gcdt-slack-integration
+gcdt-datadog-integration
+gcdt-gen-serverless
+aws-mfa
